@@ -1,0 +1,120 @@
+.container {
+    width: 70%;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* pure white */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #391768; /* matching the purple from the image */
+    font-size: 30px; /* increase if necessary */
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+.actions input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-right: 20px;
+    border: 1px solid #c4c4c4;
+    background-color: #5390ca;
+    color: #ffffff;
+}
+
+.actions input::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #391768;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #403872;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.result textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 1px solid #808080;
+    color: #808080;
+    caret-color: transparent;
+}
+
+.result textarea#resultText {
+    caret-color: transparent;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+    .actions {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .actions input {
+        width: 80%; /* Set input width to 80% */
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .result {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+}

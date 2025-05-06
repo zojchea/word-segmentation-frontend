@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    user-select: none;
+    -webkit-user-select: none; /* For Safari and Chrome */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For IE10+ */
+}
+
+.my-confirm-button {
+    background-color: #391768;
+    color: #fff;
+    border: 2px solid #391768;
+    padding: 50% 80%;
+}
+
+.swal-alert-html {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .my-sweet-alert-popup .swal-alert-html {
+        font-size: 18px !important;
+        margin-bottom: 5px;
+    }
+}

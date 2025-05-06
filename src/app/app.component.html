@@ -1,0 +1,16 @@
+<div class="container">
+  <img draggable="false" src="./assets/finki-logo.png" alt="Logo" class="logo">
+
+  <h1>Сегментација на зборовите во македонскиот јазик</h1>
+
+  <div class="actions">
+    <input (keyup.enter)="validateAndFetchSyllables()" (change)="updateWord($event)" type="text" placeholder="Внеси текст!">
+    <button (click)="validateAndFetchSyllables()">Подели на слогови</button>
+  </div>
+
+  <div class="result">
+    <textarea disabled placeholder="Резултат">{{ textDividedBySyllables }}</textarea>
+  </div>
+
+</div>
+
